@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
+import Gallery from "./pages/Gallery";
+import DynamicService from "./components/DynamicService";
+
+import { constructionData, oilAndGasData, marineData } from "./data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route
+          path="/construction"
+          element={<DynamicService serviceData={constructionData} />}
+        />
+        <Route
+          path="/oil-and-gas"
+          element={<DynamicService serviceData={oilAndGasData} />}
+        />
+        <Route
+          path="/marine"
+          element={<DynamicService serviceData={marineData} />}
+        />
+      </Routes>
+    </Router>
   );
 }
 
