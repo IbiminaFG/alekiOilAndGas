@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import service1 from "../assets/images/service-1.png";
 import service2 from "../assets/images/service-2.png";
 import service3 from "../assets/images/service-3.png";
@@ -7,6 +7,8 @@ import vessel from "../assets/svgs/vessel.svg";
 import construction from "../assets/svgs/construction.svg";
 import ServiceCard from "./ServiceCard";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { Slide } from "react-awesome-reveal";
 
 const services = [
   {
@@ -43,24 +45,54 @@ const whatWeDo = [
 const Services = () => {
   return (
     <section className="">
-      <div className="flex flex-wrap justify-center p-3 gap-14 md:p-10">
-        {services.map((service, index) => (
-          <Link key={index} to={service.route}>
-            {" "}
-            {/* Wrap service with Link component */}
-            <div className="flex flex-col gap-5 items-center justify-center">
+      {/* <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-6 my-14 px-[100px]"> */}
+
+      <div className="flex flex-wrap justify-center gap-6 my-14 px-5 sm:px-10 xl:px-[100px]">
+        {services.map((service, index) => {
+          return (
+            <motion.div
+              initial={{
+                opacity: 0,
+                scale: 0.5,
+              }}
+              whileInView={{
+                opacity: 1,
+                scale: 1,
+              }}
+              transition={{
+                duration: 1,
+                ease: "easeIn",
+              }}
+              key={index}
+              className="text-white shadow-md rounded-lg overflow-hidden relative group "
+            >
               <img
                 src={service.image}
-                alt={service.text}
-                className="max-w-[245px]"
+                alt=""
+                className="w-full max-w-[250px] rounded-lg"
               />
-              <div className="flex gap-3 items-center">
-                <div className="w-3 h-3 rounded-full bg-black"></div>
-                <p className="lg:text-[25px] font-semibold">{service.text}</p>
+              {/* overlay section */}
+              <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-black/60 group-hover:backdrop-blur-sm duration-500">
+                <div className="space-y-4">
+                  <Slide cascade>
+                    <h1 className="text-3xl font-bold">{service.text}</h1>
+                    {/* <Fade cascade damping={0.05}>
+                      <p>See what we have for you!</p>
+                    </Fade> */}
+                    <div>
+                      <Link
+                        to={service.route}
+                        className="border border-white px-4 py-2 rounded-lg hover:bg-black/20 duration-300"
+                      >
+                        View
+                      </Link>
+                    </div>
+                  </Slide>
+                </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </motion.div>
+          );
+        })}
       </div>
 
       <div className="flex items-end gap-1 px-10 md:px-28">
@@ -69,7 +101,9 @@ const Services = () => {
       </div>
 
       <div className="px-3 md:px-28 py-10">
-        <h2 className="text-5xl font-bold text-primary-blue">What We Do</h2>
+        <h2 className="text-4xl min-[1450px]:text-5xl text-primary-blue font-bold">
+          What We Do
+        </h2>
         <p className="font-medium">
           We put in our best in all our services because you deserve the best
           always.
@@ -77,7 +111,23 @@ const Services = () => {
 
         <div className="flex flex-wrap justify-center gap-8 md:gap-16 mt-10">
           {whatWeDo.map((item, index) => (
-            <ServiceCard key={index} item={item} />
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+              }}
+              transition={{
+                duration: 1,
+                ease: "easeIn",
+              }}
+              key={index}
+            >
+              <ServiceCard item={item} />
+            </motion.div>
           ))}
         </div>
       </div>

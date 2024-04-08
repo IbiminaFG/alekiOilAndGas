@@ -1,5 +1,6 @@
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import { motion } from "framer-motion";
 
 import hero1 from "../assets/images/hero-background.png";
 import hero2 from "../assets/images/slide1.png";
@@ -28,7 +29,7 @@ const Portfolio = () => {
         href={portfolio}
         target="_blank"
         rel="noreferrer"
-        className="px-5 py-2 rounded-lg duration-300 bg-primary-blue text-white hover:bg-transparent border border-solid border-primary-blue"
+        className="download_btn px-5 py-2 rounded-lg duration-300 text-white hover:bg-transparent"
       >
         Download Portfolio
       </a>
@@ -59,10 +60,40 @@ const Hero = () => {
             >
               <div className="flex justify-center items-center w-full h-full">
                 <div className="w-full h-full flex flex-col gap-5 justify-center items-center we_are_card p-5">
-                  <span className="text-center text-3xl sm:text-[50px] text-white leading-none">
+                  <motion.span
+                    initial={{
+                      opacity: 0,
+                      x: 200,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      x: 0,
+                      once: "true",
+                    }}
+                    transition={{
+                      duration: 1,
+                      ease: "easeIn",
+                    }}
+                    className="text-center text-3xl sm:text-[50px] text-white leading-none"
+                  >
                     {slideImage.caption}
-                  </span>
-                  <Portfolio />
+                  </motion.span>
+                  <motion.div
+                    initial={{
+                      opacity: 0,
+                      y: 200,
+                    }}
+                    whileInView={{
+                      opacity: 1,
+                      y: 0,
+                    }}
+                    transition={{
+                      duration: 1,
+                      ease: "easeIn",
+                    }}
+                  >
+                    <Portfolio />
+                  </motion.div>
                 </div>
               </div>
             </div>

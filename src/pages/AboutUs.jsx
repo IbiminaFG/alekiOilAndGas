@@ -13,6 +13,13 @@ const AboutUs = () => {
       </div>
 
       <div className="p-3 md:p-10">
+        <div className="flex items-end gap-1 ">
+          <h1 className="text-2xl font-Medium">About Us</h1>
+          <div className="h-1 w-64 bg-primary-blue rounded-md"></div>
+        </div>
+      </div>
+
+      <div className="p-3 md:p-10">
         <About />
       </div>
 

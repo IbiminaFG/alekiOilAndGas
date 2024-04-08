@@ -13,6 +13,11 @@
   font-family: var(--poppins);
 }
 
+.download_btn {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+}
+
 .we_are_card {
   background-color: rgba(0, 0, 0, 0.5);
   /* backdrop-filter: blur(10px); */
@@ -69,8 +74,8 @@
 
 /* Hide scrollbar for IE, Edge and Firefox */
 .hide-scroll {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 @media screen and (max-width: 600px) {
