@@ -9,6 +9,9 @@ import slide3 from "../assets/images/gallery-8.jpg";
 import slide4 from "../assets/images/gallery-9.jpg";
 import slide5 from "../assets/images/gallery-9.jpg";
 import slide6 from "../assets/images/gallery-5.jpg";
+import slide7 from "../assets/images/gallery-2.jpg";
+import slide8 from "../assets/images/gallery-4.jpg";
+import slide9 from "../assets/images/gallery-7.jpg";
 
 const Gallery = () => {
   return (
@@ -17,7 +20,7 @@ const Gallery = () => {
         <Header />
       </div>
 
-      <div className="p-5">
+      <div className="p-5 md:p-[100px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
           <div className="rounded overflow-hidden sm:col-span-2 md:col-span-3">
             <img src={slide1} alt="" className="w-full" />
@@ -41,6 +44,18 @@ const Gallery = () => {
 
           <div className="rounded overflow-hidden">
             <img src={slide5} alt="" className="w-full" />
+          </div>
+
+          <div className="rounded overflow-hidden">
+            <img src={slide7} alt="" className="w-full" />
+          </div>
+
+          <div className="rounded overflow-hidden">
+            <img src={slide8} alt="" className="w-full" />
+          </div>
+
+          <div className="rounded overflow-hidden">
+            <img src={slide9} alt="" className="w-full" />
           </div>
         </div>
       </div>

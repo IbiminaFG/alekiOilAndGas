@@ -29,10 +29,10 @@ const Header = () => {
         <div className="font-bold text-2xl cursor-pointer gap-3 flex items-center font-[Poppins] text-gray-800">
           <img src={alekiLogo} alt="aleki logo" />
           <div>
-            <p className="uppercase text-[16px] text-primary-blue font-semi-bold leading-none">
+            <p className="uppercase text-[16px] text-[#FF1400] font-semi-bold leading-none">
               Aleki
             </p>
-            <p className="text-[15px] text-primary-blue uppercase leading-none">
+            <p className="text-[15px] text-[#FF1400] uppercase leading-none">
               Oil and Gas Limited
             </p>
           </div>

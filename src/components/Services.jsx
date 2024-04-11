@@ -97,11 +97,11 @@ const Services = () => {
 
       <div className="flex items-end gap-1 px-10 md:px-28">
         <h1 className="text-2xl font-light">Services</h1>
-        <div className="h-1 w-64 bg-primary-blue rounded-md"></div>
+        <div className="h-1 w-64 bg-[#FF1400] rounded-md"></div>
       </div>
 
       <div className="px-3 md:px-28 py-10">
-        <h2 className="text-4xl min-[1450px]:text-5xl text-primary-blue font-bold">
+        <h2 className="text-4xl min-[1450px]:text-5xl text-[#FF1400] font-bold">
           What We Do
         </h2>
         <p className="font-medium">

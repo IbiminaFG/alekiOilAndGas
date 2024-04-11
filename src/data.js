@@ -1,9 +1,12 @@
 import service1 from "./assets/images/service-1.png";
 import service2 from "./assets/images/service-2.png";
 import service3 from "./assets/images/service-3.png";
+import service4 from "./assets/images/gallery-6.jpg";
+import service5 from "./assets/images/gallery-1.jpg";
+import service6 from "./assets/images/gallery-8.jpg";
 
 export const constructionData = {
-  image: service1,
+  image: [service1],
   title: "Construction Services",
   details: [
     "Dynamic and super efficient Construction services for Buildings, factories, Civil & Mechanical Works and Mega Building projects.",
@@ -12,7 +15,7 @@ export const constructionData = {
 };
 
 export const oilAndGasData = {
-  image: service2,
+  image: [service2],
   title: "Oil and Gas Services",
   details: [
     "Aleki Oil and Gas has a portfolio of oil and gas assets in Nigeria and the SubSahara We hold interests in exploration, development, and production of oil and gas concessions.",
@@ -21,7 +24,7 @@ export const oilAndGasData = {
 };
 
 export const marineData = {
-  image: service3,
+  image: [service4, service5, service6],
   title: "Marine Services",
   details: [
     " Marine contracts that include everything from oil drills to water systems and channels. ",

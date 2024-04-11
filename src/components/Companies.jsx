@@ -46,7 +46,7 @@ const Companies = () => {
 
   return (
     <div className="px-10 py-5 overflow-auto hide-scroll w-full">
-      <h1 className="text-center text-4xl text-primary-blue font-bold">
+      <h1 className="text-center text-4xl text-[#FF1400] font-bold">
         Our clients
       </h1>
       <div
