@@ -19,7 +19,7 @@ const Staff = () => {
     <div className="p-10 flex justify-center items-center">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
         {staffs.map((staff, index) => (
-          <div>
+          <div key={index}>
             <img src={staff.image} alt={staff.role} />
             <div className="flex flex-col justify-center text-center">
               <p className="font-semibold">{staff.name}</p>
