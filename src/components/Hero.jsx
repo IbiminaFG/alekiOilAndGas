@@ -3,7 +3,7 @@ import "react-slideshow-image/dist/styles.css";
 import { motion } from "framer-motion";
 
 import hero1 from "../assets/images/hero-background.png";
-import hero2 from "../assets/images/slide1.png";
+import hero2 from "../assets/images/gallery-1.jpg";
 import hero3 from "../assets/images/slide2.png";
 import portfolio from "../assets/ALEKIOILANDGAS2023.pdf";
 
