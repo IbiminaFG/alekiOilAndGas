@@ -8,10 +8,10 @@ import hero3 from "../assets/images/slide2.png";
 import portfolio from "../assets/ALEKIOILANDGAS2023.pdf";
 
 const slideImages = [
-  {
-    url: hero1,
-    caption: "We’re Here To Make A Long-term Difference..",
-  },
+  // {
+  //   url: hero3,
+  //   caption: "We’re Here To Make A Long-term Difference..",
+  // },
   {
     url: hero2,
     caption: "We’re Here To Make A Long-term Difference..",

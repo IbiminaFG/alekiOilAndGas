@@ -5,7 +5,8 @@ import Companies from "../components/Companies";
 import Footer from "../components/Footer";
 import { motion } from "framer-motion";
 
-import slide6 from "../assets/images/slide6.png";
+import slide6 from "../assets/images/gallery-5.jpg";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -44,22 +45,35 @@ const Home = () => {
               duration: 1,
               ease: "easeIn",
             }}
-            className="w-full"
+            className="w-full flex flex-col gap-3 calibri_font text-[11px] leading-relaxed"
           >
-            <p className="w-auto text-justify">
+            <p className="w-auto">
               ALEKI OIL AND GAS LTD. is a Nigerian company established in 2018,
               specializing in providing a wide range of services to the oil and
               gas industry. Their offerings include land and marine logistics,
               construction, engineering, manpower supply, procurement, and
-              environmental management. They excel in on-shore and off-shore
-              projects, pipeline construction, chemical and petrochemical
-              plants, and major civil works. The company prioritizes using local
-              resources, minimizing environmental impact, and ensuring safety.
+              environmental management.
+            </p>
+            <p className="w-auto">
+              They excel in on-shore and off-shore projects, pipeline
+              construction, chemical and petrochemical plants, and major civil
+              works. The company prioritizes using local resources, minimizing
+              environmental impact, and ensuring safety.
+            </p>
+            <p className="w-auto">
               They maintain 24-hour communication facilities, provide
               recreational amenities for their crew, and have a robust health,
               safety, and environment manual. ALEKI OIL AND GAS LTD. also values
               positive relationships with host communities.
             </p>
+            <div>
+              <Link
+                to="/about"
+                className="py-2 px-4 bg-primary-red text-white border border-solid border-primary-red hover:bg-transparent hover:text-primary-red duration-300"
+              >
+                Read more
+              </Link>
+            </div>
           </motion.div>
         </div>
       </div>

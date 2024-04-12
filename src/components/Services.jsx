@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import service1 from "../assets/images/service-1.png";
-import service2 from "../assets/images/service-2.png";
-import service3 from "../assets/images/service-3.png";
+import React from "react";
+import service1 from "../assets/images/construction.jpg";
+import service2 from "../assets/images/service-1.png";
+import service3 from "../assets/images/marine.jpg";
 import engineering from "../assets/svgs/engineering.svg";
 import vessel from "../assets/svgs/vessel.svg";
 import construction from "../assets/svgs/construction.svg";
@@ -64,13 +64,10 @@ const Services = () => {
                 ease: "easeIn",
               }}
               key={index}
-              className="text-white shadow-md rounded-lg overflow-hidden relative group "
+              className="text-white shadow-md max-w-[250px] h-[250px] rounded-lg overflow-hidden relative group "
             >
-              <img
-                src={service.image}
-                alt=""
-                className="w-full max-w-[250px] rounded-lg"
-              />
+              <img src={service.image} alt="" className="w-full" />
+
               {/* overlay section */}
               <div className="absolute left-0 top-[-100%] opacity-0 group-hover:opacity-100 group-hover:top-[0] p-4 w-full h-full bg-black/60 group-hover:backdrop-blur-sm duration-500">
                 <div className="space-y-4">

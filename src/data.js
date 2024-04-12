@@ -1,5 +1,5 @@
-import service1 from "./assets/images/service-1.png";
-import service2 from "./assets/images/service-2.png";
+import service1 from "./assets/images/construction.jpg";
+import service2 from "./assets/images/service-1.png";
 import service4 from "./assets/images/gallery-6.jpg";
 import service5 from "./assets/images/gallery-1.jpg";
 import service6 from "./assets/images/gallery-8.jpg";
