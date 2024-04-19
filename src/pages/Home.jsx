@@ -25,7 +25,7 @@ const Home = () => {
 
       <div className="p-3 lg:p-[100px]">
         <div className="flex flex-col max-md:justify-center md:flex-row gap-10 items-center">
-          <div className="rounded-lg max-md:w-64 overflow-hidden">
+          <div className="rounded-lg shadow-xl max-md:w-64 overflow-hidden">
             <img
               src={slide6}
               alt="about us diagram"
@@ -45,7 +45,7 @@ const Home = () => {
               duration: 1,
               ease: "easeIn",
             }}
-            className="w-full flex flex-col gap-3 calibri_font text-[11px] leading-relaxed"
+            className="w-full flex flex-col gap-3 calibri_font text-sm text-justify leading-relaxed"
           >
             <p className="w-auto">
               ALEKI OIL AND GAS LTD. is a Nigerian company established in 2018,
@@ -66,7 +66,7 @@ const Home = () => {
               safety, and environment manual. ALEKI OIL AND GAS LTD. also values
               positive relationships with host communities.
             </p>
-            <div>
+            <div className="mt-10">
               <Link
                 to="/about"
                 className="py-2 px-4 bg-primary-red text-white border border-solid border-primary-red hover:bg-transparent hover:text-primary-red duration-300"

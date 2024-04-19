@@ -4,14 +4,9 @@ import { motion } from "framer-motion";
 
 import hero1 from "../assets/images/hero-background.png";
 import hero2 from "../assets/images/gallery-1.jpg";
-import hero3 from "../assets/images/slide2.png";
-import portfolio from "../assets/ALEKIOILANDGAS2023.pdf";
+import hero3 from "../assets/images/gallery-12.jpg";
 
 const slideImages = [
-  // {
-  //   url: hero3,
-  //   caption: "We’re Here To Make A Long-term Difference..",
-  // },
   {
     url: hero2,
     caption: "We’re Here To Make A Long-term Difference..",
@@ -21,21 +16,6 @@ const slideImages = [
     caption: "We’re Here To Make A Long-term Difference..",
   },
 ];
-
-const Portfolio = () => {
-  return (
-    <div className="">
-      <a
-        href={portfolio}
-        target="_blank"
-        rel="noreferrer"
-        className="download_btn px-5 py-2 rounded-lg duration-300 text-white hover:bg-transparent"
-      >
-        Download Portfolio
-      </a>
-    </div>
-  );
-};
 
 const Hero = () => {
   const divStyle = {
@@ -91,9 +71,7 @@ const Hero = () => {
                       duration: 1,
                       ease: "easeIn",
                     }}
-                  >
-                    <Portfolio />
-                  </motion.div>
+                  ></motion.div>
                 </div>
               </div>
             </div>

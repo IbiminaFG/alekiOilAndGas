@@ -9,8 +9,24 @@ import service4 from "../assets/images/gallery-6.jpg";
 import service5 from "../assets/images/gallery-1.jpg";
 import service6 from "../assets/images/gallery-8.jpg";
 import service7 from "../assets/images/gallery-9.jpg";
+import portfolio from "../assets/ALEKIOILANDGAS2023.pdf";
 
 const image = [service4, service5, service6, service7];
+
+const Portfolio = () => {
+  return (
+    <div className="">
+      <a
+        href={portfolio}
+        target="_blank"
+        rel="noreferrer"
+        className="download_btn px-5 py-2 rounded-lg duration-300 text-white hover:bg-transparent hover:text-primary-red border border-solid border-primary-red"
+      >
+        Download Portfolio
+      </a>
+    </div>
+  );
+};
 
 const AboutUs = () => {
   return (
@@ -37,6 +53,10 @@ const AboutUs = () => {
             />
           ))}
         </div>
+      </div>
+
+      <div className="my-5 px-3 md:px-20">
+        <Portfolio />
       </div>
 
       <div className="p-3 md:p-10">
