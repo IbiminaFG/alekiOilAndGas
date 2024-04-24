@@ -1,11 +1,12 @@
-import service1 from "./assets/images/construction.jpg";
+// import service1 from "./assets/images/construction.jpg";
+import service7 from "./assets/images/construction-1.jpg";
 import service2 from "./assets/images/service-1.png";
 import service4 from "./assets/images/gallery-6.jpg";
 import service5 from "./assets/images/gallery-1.jpg";
 import service6 from "./assets/images/gallery-8.jpg";
 
 export const constructionData = {
-  image: [service1],
+  image: [service7],
   title: "Construction Services",
   details: [
     "Dynamic and super efficient Construction services for Buildings, factories, Civil & Mechanical Works and Mega Building projects.",
