@@ -25,6 +25,33 @@ const ServiceDetail = ({ serviceData }) => {
           </p>
         ))}
       </div>
+
+      {serviceData.services && (
+        <div className="flex flex-col gap-5 my-4">
+          {serviceData.services.map((service, index) => (
+            <p className="text-justify">
+              <span className="font-bold">{service.title}</span>{" "}
+              {service.description}
+            </p>
+          ))}
+        </div>
+      )}
+
+      {serviceData.lists && (
+        <div>
+          <p className="font-bold text-justify">{serviceData.lists.title}</p>
+
+          <ul className="list-disc pl-10">
+            {serviceData.lists.lists.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+
+      {serviceData.conclusion && (
+        <p className="text-justify mt-4">{serviceData.conclusion}</p>
+      )}
     </section>
   );
 };
