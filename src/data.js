@@ -8,7 +8,7 @@ import service5 from "./assets/images/gallery-1.jpg";
 import service6 from "./assets/images/gallery-8.jpg";
 
 export const constructionData = {
-  image: [service7, service8, service9],
+  image: [service7, service8],
   title: "Construction Services",
   details: [
     "Aleki oil and gas Nigeria Limited delivers high-quality engineering services, leveraging cutting-edge technology and a client-centric approach, to drive success and innovation in every project we undertake. With a team of highly skilled professionals and a wealth of experience in the industry, we are committed to delivering innovative solutions and exceeding client expectations. Multi-discipline engineers are available in-house. Other specialty expertise and special technologies are provided through long - standing strategic arrangements with out technical partners. Our comprehensive range of engineering services covers various sectors, including construction, infrastructure, manufacturing, and more.",
@@ -62,7 +62,7 @@ export const oilAndGasData = {
 };
 
 export const marineData = {
-  image: [service4, service5, service6],
+  image: [service4, service9, service6],
   title: "Marine Services",
   details: [
     "Marine contracts that include everything from oil drills to water systems and channels. ",

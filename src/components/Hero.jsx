@@ -2,8 +2,9 @@ import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import { motion } from "framer-motion";
 
-import hero2 from "../assets/images/gallery-1.jpg";
+import hero1 from "../assets/images/gallery.jpg";
 import hero3 from "../assets/images/gallery-12.jpg";
+import hero2 from "../assets/images/construction-3.jpg";
 
 const slideImages = [
   {
@@ -12,6 +13,10 @@ const slideImages = [
   },
   {
     url: hero3,
+    caption: "We’re Here To Make A Long-term Difference..",
+  },
+  {
+    url: hero1,
     caption: "We’re Here To Make A Long-term Difference..",
   },
 ];
