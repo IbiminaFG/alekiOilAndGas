@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import hero1 from "../assets/images/gallery.jpg";
 import hero3 from "../assets/images/gallery-12.jpg";
 import hero2 from "../assets/images/construction-3.jpg";
+import hero4 from "../assets/images/gallery-16.jpg";
 
 const slideImages = [
   {
@@ -19,6 +20,10 @@ const slideImages = [
     url: hero1,
     caption: "We’re Here To Make A Long-term Difference..",
   },
+  {
+    url: hero4,
+    caption: "We’re Here To Make A Long-term Difference..",
+  },
 ];
 
 const Hero = () => {
@@ -30,7 +35,7 @@ const Hero = () => {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
-    height: "100svh",
+    // height: "100svh",
   };
 
   return (
@@ -39,7 +44,7 @@ const Hero = () => {
         {slideImages.map((slideImage, index) => (
           <div key={index} className="h-full">
             <div
-              className="h-full"
+              className="h-[300px] md:h-screen"
               style={{ ...divStyle, backgroundImage: `url(${slideImage.url})` }}
             >
               <div className="flex justify-center items-center w-full h-full">

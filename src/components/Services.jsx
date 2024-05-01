@@ -1,6 +1,6 @@
 import React from "react";
 import service1 from "../assets/images/construction.jpg";
-import service2 from "../assets/images/service-1.png";
+import service2 from "../assets/images/gallery-13.jpg";
 import service3 from "../assets/images/marine.jpg";
 import engineering from "../assets/svgs/engineering.svg";
 import vessel from "../assets/svgs/vessel.svg";
