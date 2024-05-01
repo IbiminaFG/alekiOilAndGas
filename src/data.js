@@ -4,8 +4,7 @@ import service8 from "./assets/images/construction-2.jpg";
 import service9 from "./assets/images/construction-3.jpg";
 import service2 from "./assets/images/service-1.png";
 import service4 from "./assets/images/gallery-6.jpg";
-import service5 from "./assets/images/gallery-1.jpg";
-import service6 from "./assets/images/gallery-8.jpg";
+import service6 from "./assets/images/gallery-16.jpg";
 
 export const constructionData = {
   image: [service7, service8],
